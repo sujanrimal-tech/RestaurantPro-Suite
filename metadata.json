@@ -1,0 +1,6 @@
+{
+  "name": "Syko Sof",
+  "description": "A comprehensive restaurant management system handling table management, orders, menu, billing, basic inventory, customer interactions, and kitchen display. Features AI-powered assistance for menu creation and insights. This is a simplified demonstration and full features like multi-user login, payment processing, and advanced accounting would require backend services.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
