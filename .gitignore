@@ -1,0 +1,12 @@
+# Environment variables (if you ever had a .env file locally, though you shouldn't commit it)
+.env
+.env.*
+!.env.example
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
