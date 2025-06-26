@@ -1,5 +1,5 @@
 
-import { Table, MenuItem, MenuCategory, InventoryItem, TableStatus, Order, InventoryCategory, ThemeSettings } from './types';
+import { Table, MenuItem, MenuCategory, InventoryItem, TableStatus, Order, InventoryCategory, ThemeSettings } from './types.js';
 
 export const APP_NAME = "RestaurantPro Suite";
 export const TAX_RATE = 0.08; // 8%

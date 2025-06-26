@@ -4,7 +4,7 @@ import {
   Table, MenuItem, Order, OrderItem, InventoryItem, TableStatus, AppView, MenuCategory, Bill,
   GroundingMetadata, GroundingChunk, UserRole, InventoryCategory, OrderItemStatus, ReportPeriod, SalesReportData,
   DetailedSoldItem, CategorySalesReport, ActivityLogEntry, ActivityType, ThemeSettings
-} from './types';
+} from './types.js';
 import { 
   INITIAL_TABLES, INITIAL_MENU_ITEMS, INITIAL_INVENTORY, INITIAL_ORDERS, INITIAL_CATEGORIES,
   INITIAL_INVENTORY_CATEGORIES, INITIAL_THEME_SETTINGS,
@@ -13,9 +13,9 @@ import {
   LOGIN_ICON_SVG, LOGOUT_ICON_SVG, CLEANING_ICON_SVG, TABLE_SETTINGS_ICON_SVG, 
   KITCHEN_LOGIN_ICON_SVG, KITCHEN_DASHBOARD_ICON_SVG, ACTIVITY_LOG_ICON_SVG, SEATING_CONFIG_ICON_SVG,
   THEME_SETTINGS_ICON_SVG
-} from './constants';
-import * as geminiService from './services/geminiService';
-import Modal from './components/common/Modal';
+} from './constants.js';
+import * as geminiService from './services/geminiService.js';
+import Modal from './components/common/Modal.js';
 
 // Custom hook for localStorage
 const useLocalStorage = <T,>(key: string, initialValue: T): [T, React.Dispatch<React.SetStateAction<T>>] => {
