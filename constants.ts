@@ -1,37 +1,31 @@
-
-import { Table, MenuItem, MenuCategory, InventoryItem, TableStatus, Order, InventoryCategory, ThemeSettings } from './types.js';
-
+import { TableStatus } from './types.js';
 export const APP_NAME = "RestaurantPro Suite";
 export const TAX_RATE = 0.08; // 8%
-
-export const INITIAL_CATEGORIES: MenuCategory[] = [
-  { id: 'cat1', name: 'Appetizers' },
-  { id: 'cat2', name: 'Main Courses' },
-  { id: 'cat3', name: 'Desserts' },
-  { id: 'cat4', name: 'Beverages' },
+export const INITIAL_CATEGORIES = [
+    { id: 'cat1', name: 'Appetizers' },
+    { id: 'cat2', name: 'Main Courses' },
+    { id: 'cat3', name: 'Desserts' },
+    { id: 'cat4', name: 'Beverages' },
 ];
-
-export const INITIAL_TABLES: Table[] = [
-  { id: 't1', name: 'Table 1', capacity: 4, status: TableStatus.Available },
-  { id: 't2', name: 'Table 2', capacity: 2, status: TableStatus.Cleaning },
-  { id: 't3', name: 'Table 3', capacity: 6, status: TableStatus.Occupied },
-  { id: 't4', name: 'Table 4', capacity: 4, status: TableStatus.Reserved },
-  { id: 't5', name: 'VIP Booth', capacity: 8, status: TableStatus.Available },
-  { id: 't6', name: 'Bar Seat 1', capacity: 1, status: TableStatus.Available },
-  { id: 't7', name: 'Bar Seat 2', capacity: 1, status: TableStatus.Occupied },
-  { id: 't8', name: 'Patio 1', capacity: 4, status: TableStatus.Dirty },
+export const INITIAL_TABLES = [
+    { id: 't1', name: 'Table 1', capacity: 4, status: TableStatus.Available },
+    { id: 't2', name: 'Table 2', capacity: 2, status: TableStatus.Cleaning },
+    { id: 't3', name: 'Table 3', capacity: 6, status: TableStatus.Occupied },
+    { id: 't4', name: 'Table 4', capacity: 4, status: TableStatus.Reserved },
+    { id: 't5', name: 'VIP Booth', capacity: 8, status: TableStatus.Available },
+    { id: 't6', name: 'Bar Seat 1', capacity: 1, status: TableStatus.Available },
+    { id: 't7', name: 'Bar Seat 2', capacity: 1, status: TableStatus.Occupied },
+    { id: 't8', name: 'Patio 1', capacity: 4, status: TableStatus.Dirty },
 ];
-
-export const INITIAL_MENU_ITEMS: MenuItem[] = [
-  { id: 'm1', name: 'Spring Rolls', description: 'Crispy vegetable spring rolls.', price: 8.99, category: 'cat1', imageUrl: 'https://picsum.photos/seed/springrolls/300/200', ingredients: ['Wrapper', 'Cabbage', 'Carrot'], inStock: true },
-  { id: 'm2', name: 'Grilled Salmon', description: 'Freshly grilled salmon with lemon butter sauce.', price: 22.50, category: 'cat2', imageUrl: 'https://picsum.photos/seed/salmon/300/200', ingredients: ['Salmon Fillet', 'Lemon', 'Butter', 'Herbs'], inStock: true },
-  { id: 'm3', name: 'Chocolate Lava Cake', description: 'Warm chocolate cake with a molten center.', price: 10.00, category: 'cat3', imageUrl: 'https://picsum.photos/seed/lavacake/300/200', ingredients: ['Chocolate', 'Flour', 'Sugar', 'Egg'], inStock: false },
-  { id: 'm4', name: 'Iced Tea', description: 'Refreshing homemade iced tea.', price: 3.50, category: 'cat4', imageUrl: 'https://picsum.photos/seed/icedtea/300/200', ingredients: ['Tea Leaves', 'Water', 'Sugar', 'Lemon'], inStock: true },
-  { id: 'm5', name: 'Caesar Salad', description: 'Classic Caesar salad with romaine lettuce, croutons, and Parmesan cheese.', price: 12.00, category: 'cat1', imageUrl: 'https://picsum.photos/seed/caesarsalad/300/200', ingredients: ['Romaine Lettuce', 'Croutons', 'Parmesan', 'Caesar Dressing'], inStock: true },
-  { id: 'm6', name: 'Steak Frites', description: 'Grilled steak served with crispy French fries.', price: 28.00, category: 'cat2', imageUrl: 'https://picsum.photos/seed/steakfrites/300/200', ingredients: ['Steak', 'Potatoes', 'Oil', 'Seasoning'], inStock: true },
+export const INITIAL_MENU_ITEMS = [
+    { id: 'm1', name: 'Spring Rolls', description: 'Crispy vegetable spring rolls.', price: 8.99, category: 'cat1', imageUrl: 'https://picsum.photos/seed/springrolls/300/200', ingredients: ['Wrapper', 'Cabbage', 'Carrot'], inStock: true },
+    { id: 'm2', name: 'Grilled Salmon', description: 'Freshly grilled salmon with lemon butter sauce.', price: 22.50, category: 'cat2', imageUrl: 'https://picsum.photos/seed/salmon/300/200', ingredients: ['Salmon Fillet', 'Lemon', 'Butter', 'Herbs'], inStock: true },
+    { id: 'm3', name: 'Chocolate Lava Cake', description: 'Warm chocolate cake with a molten center.', price: 10.00, category: 'cat3', imageUrl: 'https://picsum.photos/seed/lavacake/300/200', ingredients: ['Chocolate', 'Flour', 'Sugar', 'Egg'], inStock: false },
+    { id: 'm4', name: 'Iced Tea', description: 'Refreshing homemade iced tea.', price: 3.50, category: 'cat4', imageUrl: 'https://picsum.photos/seed/icedtea/300/200', ingredients: ['Tea Leaves', 'Water', 'Sugar', 'Lemon'], inStock: true },
+    { id: 'm5', name: 'Caesar Salad', description: 'Classic Caesar salad with romaine lettuce, croutons, and Parmesan cheese.', price: 12.00, category: 'cat1', imageUrl: 'https://picsum.photos/seed/caesarsalad/300/200', ingredients: ['Romaine Lettuce', 'Croutons', 'Parmesan', 'Caesar Dressing'], inStock: true },
+    { id: 'm6', name: 'Steak Frites', description: 'Grilled steak served with crispy French fries.', price: 28.00, category: 'cat2', imageUrl: 'https://picsum.photos/seed/steakfrites/300/200', ingredients: ['Steak', 'Potatoes', 'Oil', 'Seasoning'], inStock: true },
 ];
-
-export const INITIAL_INVENTORY_CATEGORIES: InventoryCategory[] = [ 
+export const INITIAL_INVENTORY_CATEGORIES = [
     { id: 'invcat1', name: 'Groceries' },
     { id: 'invcat2', name: 'Beverages (Non-Alc)' },
     { id: 'invcat3', name: 'Bar Supplies (Alc)' },
@@ -40,17 +34,15 @@ export const INITIAL_INVENTORY_CATEGORIES: InventoryCategory[] = [
     { id: 'invcat6', name: 'Hookah Flavors' },
     { id: 'invcat7', name: 'Other' },
 ];
-
-export const INITIAL_INVENTORY: InventoryItem[] = [
-  { id: 'inv1', name: 'Salmon Fillet', quantity: 20, unit: 'pcs', lowStockThreshold: 5, supplier: 'Ocean Foods', categoryId: 'invcat1' },
-  { id: 'inv2', name: 'Potatoes', quantity: 50, unit: 'kg', lowStockThreshold: 10, supplier: 'Farm Fresh', categoryId: 'invcat1' },
-  { id: 'inv3', name: 'Tea Leaves (Bulk)', quantity: 5, unit: 'kg', lowStockThreshold: 1, supplier: 'Global Teas', categoryId: 'invcat2' },
-  { id: 'inv4', name: 'Flour', quantity: 15, unit: 'kg', lowStockThreshold: 5, supplier: 'Mill Co.', categoryId: 'invcat1' },
-  { id: 'inv5', name: 'Soda Syrup', quantity: 10, unit: 'liter', lowStockThreshold: 2, supplier: 'BevCo', categoryId: 'invcat2' },
-  { id: 'inv6', name: 'Shisha Coal', quantity: 100, unit: 'pcs', lowStockThreshold: 20, categoryId: 'invcat6'},
+export const INITIAL_INVENTORY = [
+    { id: 'inv1', name: 'Salmon Fillet', quantity: 20, unit: 'pcs', lowStockThreshold: 5, supplier: 'Ocean Foods', categoryId: 'invcat1' },
+    { id: 'inv2', name: 'Potatoes', quantity: 50, unit: 'kg', lowStockThreshold: 10, supplier: 'Farm Fresh', categoryId: 'invcat1' },
+    { id: 'inv3', name: 'Tea Leaves (Bulk)', quantity: 5, unit: 'kg', lowStockThreshold: 1, supplier: 'Global Teas', categoryId: 'invcat2' },
+    { id: 'inv4', name: 'Flour', quantity: 15, unit: 'kg', lowStockThreshold: 5, supplier: 'Mill Co.', categoryId: 'invcat1' },
+    { id: 'inv5', name: 'Soda Syrup', quantity: 10, unit: 'liter', lowStockThreshold: 2, supplier: 'BevCo', categoryId: 'invcat2' },
+    { id: 'inv6', name: 'Shisha Coal', quantity: 100, unit: 'pcs', lowStockThreshold: 20, categoryId: 'invcat6' },
 ];
-
-export const INITIAL_ORDERS: Order[] = [
+export const INITIAL_ORDERS = [
     {
         id: 'o1',
         tableId: 't3',
@@ -77,13 +69,10 @@ export const INITIAL_ORDERS: Order[] = [
         createdAt: Date.now() - 600000 // 10 minutes ago
     }
 ];
-
 // Helper to generate unique IDs
-export const generateId = (): string => Math.random().toString(36).substr(2, 9);
-
+export const generateId = () => Math.random().toString(36).substr(2, 9);
 // Gemini Model Names
 export const GEMINI_TEXT_MODEL = 'gemini-2.5-flash-preview-04-17';
-
 export const POS_ICON_SVG = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hero-icon"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" /></svg>`;
 export const KDS_ICON_SVG = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hero-icon"><path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836c-.065.227-.1.468-.1.714v16.886c0 .414.07.814.202 1.182A2.004 2.004 0 0 0 13.25 24h1.5c.346 0 .68-.055.99-.161.217-.074.43-.162.636-.262a2.008 2.008 0 0 0 .914-.882c.065-.132.118-.27.158-.412a15.93 15.93 0 0 0 .288-1.07Co19 12.057 19 8.01 19 5.378c0-.414-.07-.814-.202-1.182A2.004 2.004 0 0 0 17.002 2.5h-1.5c-.346 0-.68.055-.99.161-.217-.074-.43.162-.636-.262a2.008 2.008 0 0 0-.914.882c-.065.132-.118.27-.158.412a16.04 16.04 0 0 0-.288 1.07C11.5 5.94 11.5 8.01 11.5 10.622c0 .246-.035.49-.1.714ZM6.5 3.836C6.435 4.064 6.4 4.305 6.4 4.55v16.886c0 .414.07.814.202 1.182A2.004 2.004 0 0 0 8.502 24h1.5c.346 0 .68-.055.99-.161.217-.074.43-.162.636-.262a2.008 2.008 0 0 0 .914-.882c.065-.132.118-.27.158-.412a15.93 15.93 0 0 0 .288-1.07C13.25 12.057 13.25 8.01 13.25 5.378c0-.414-.07-.814-.202-1.182A2.004 2.004 0 0 0 11.252 2.5h-1.5c-.346 0-.68.055-.99.161-.217-.074-.43.162-.636-.262a2.008 2.008 0 0 0-.914.882c-.065.132-.118.27-.158.412a16.04 16.04 0 0 0-.288 1.07C6.75 5.94 6.75 8.01 6.75 10.622c0 .246-.035.49-.1.714Z" /></svg>`;
 export const MANAGEMENT_ICON_SVG = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hero-icon"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" /></svg>`;
@@ -100,23 +89,22 @@ export const KITCHEN_DASHBOARD_ICON_SVG = `<svg xmlns="http://www.w3.org/2000/sv
 export const ACTIVITY_LOG_ICON_SVG = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hero-icon"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" /></svg>`;
 export const SEATING_CONFIG_ICON_SVG = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hero-icon"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6A2.25 2.25 0 0112.75 3.75h.5a2.25 2.25 0 012.25 2.25v.5a2.25 2.25 0 01-2.25 2.25h-.5A2.25 2.25 0 0110.5 6v0zM10.5 18A2.25 2.25 0 0112.75 15.75h.5a2.25 2.25 0 012.25 2.25v.5A2.25 2.25 0 0113.25 21h-.5A2.25 2.25 0 0110.5 18v0zM6 10.5A2.25 2.25 0 013.75 12.75v.5A2.25 2.25 0 016 15.5h.5A2.25 2.25 0 018.75 13.25v-.5A2.25 2.25 0 016.5 10.5h-.5A2.25 2.25 0 016 10.5v0zM18 10.5A2.25 2.25 0 0115.75 12.75v.5A2.25 2.25 0 0118 15.5h.5A2.25 2.25 0 0120.75 13.25v-.5A2.25 2.25 0 0118.5 10.5h-.5A2.25 2.25 0 0118 10.5v0z" /></svg>`;
 export const THEME_SETTINGS_ICON_SVG = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hero-icon"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" /></svg>`;
-
-export const INITIAL_THEME_SETTINGS: ThemeSettings = {
-  primaryColor: '#3B82F6',    // Tailwind blue-500
-  secondaryColor: '#10B981', // Tailwind green-500 (for KDS highlights or accents)
-  backgroundColor: '#F3F4F6', // Tailwind gray-100 (main app background)
-  textColor: '#1F2937',      // Tailwind gray-800 (general text)
-  headerBackgroundColor: '#1F2937', // Tailwind slate-800
-  headerTextColor: '#FFFFFF',
-  buttonTextColor: '#FFFFFF',
-  cardBackgroundColor: '#FFFFFF', // For modals, cards
-  cardTextColor: '#1F2937',
-  borderColor: '#E5E7EB', // Tailwind gray-200
-  fontSizeBase: 'text-base',
-  fontFamily: 'sans-serif',
-  iconSize: 'icon-md', 
-  kitchenDisplayScale: 'scale-100',
-  uiDensity: 'normal', 
-  contentScale: 'scale-100',
-  globalPageScale: 'scale-100',
+export const INITIAL_THEME_SETTINGS = {
+    primaryColor: '#3B82F6', // Tailwind blue-500
+    secondaryColor: '#10B981', // Tailwind green-500 (for KDS highlights or accents)
+    backgroundColor: '#F3F4F6', // Tailwind gray-100 (main app background)
+    textColor: '#1F2937', // Tailwind gray-800 (general text)
+    headerBackgroundColor: '#1F2937', // Tailwind slate-800
+    headerTextColor: '#FFFFFF',
+    buttonTextColor: '#FFFFFF',
+    cardBackgroundColor: '#FFFFFF', // For modals, cards
+    cardTextColor: '#1F2937',
+    borderColor: '#E5E7EB', // Tailwind gray-200
+    fontSizeBase: 'text-base',
+    fontFamily: 'sans-serif',
+    iconSize: 'icon-md',
+    kitchenDisplayScale: 'scale-100',
+    uiDensity: 'normal',
+    contentScale: 'scale-100',
+    globalPageScale: 'scale-100',
 };
